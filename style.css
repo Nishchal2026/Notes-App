@@ -229,10 +229,13 @@ form{
     font-size: 2rem;
     margin-right: 2rem;
 padding: 0.4rem 0.8rem;
+transition: all 0.2s ease;
+
 }
 
 .add-note-btn{
     background-color: blue;
+    transition: all 0.2s ease;
     font-weight: bold;
     border: none;
     outline: none;
@@ -242,6 +245,11 @@ padding: 0.4rem 0.8rem;
     padding: 0.4rem 0.8rem;
     
 }
+
+.cancel-dialog:active,.add-note-btn:active{
+    opacity: 0.4;
+}
+
 .notes-container{
     width: 100%;
     height: 89%;
@@ -337,20 +345,26 @@ padding: 0.4rem 0.8rem;
      font-weight: bold;
      padding: 0.2rem 0.8rem;
      background-color: aqua;
+     transition: all 0.3s ease;
     }
+
     
     .delete-btn{
+        transition: all 0.3s ease;
         font-size: 1.5rem;
         border: none;
         outline: none;
         cursor: pointer;
-         font-weight: bold;
-         margin-left: 1rem; 
-         letter-spacing: 0.1rem;
+        font-weight: bold;
+        margin-left: 1rem; 
+        letter-spacing: 0.1rem;
         padding: 0.2rem 0.8rem;
         background-color: crimson;
-
- }
+        
+    }
+    .edit-btn:active,.delete-btn:active{
+        opacity: 0.4;
+    }
 
 
 
